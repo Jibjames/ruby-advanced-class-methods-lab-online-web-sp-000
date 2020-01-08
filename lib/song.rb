@@ -40,7 +40,6 @@ class Song
     else
       Song.find_by_name(name)
     end
-
   end
 
   def self.alphabetical
@@ -49,8 +48,7 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    filename.split('.').pop
-    filename = filename[0].split(' - ')
+    filename[0].split(' - ')
     song = self.new
     song.name = filename[0]
     song.artist_name = filename[1]
