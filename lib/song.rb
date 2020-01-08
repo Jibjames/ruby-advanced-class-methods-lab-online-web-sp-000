@@ -48,7 +48,7 @@ class Song
 
   end
 
-  def self.new_from_filename(filname)
+  def self.new_from_filename(fiename)
     filename.split('.').pop.split(' - ')
     song = self.new
     song.name = filename[0]
