@@ -44,7 +44,11 @@ class Song
   end
 
   def self.alphabetical
-    @@all.sort
+    @@all.sort_by
     
+  end
+
+  def new_from_filename(name)
+    name.split('.').pop
   end
 end
