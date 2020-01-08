@@ -68,6 +68,7 @@ class Song
     song = self.new
     song.name = song_name[0]
     song.artist_name = artist
+    @@all << song
     song
   end
 end
